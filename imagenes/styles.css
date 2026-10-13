@@ -1,0 +1,41 @@
+  h1 {
+    color: blue;
+  }
+  h2 {
+    color: red;
+  }
+  th {
+    background-color: lightgray;
+  }
+  td {
+    color: purple;
+  }
+  a {
+    color: black;
+  }
+  a {
+    background-color: lightgray;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  @media (min-width: 600px) {
+    .productos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .productos {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }

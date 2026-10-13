@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>  
+    <head>  
+        <title>Mi primera pagina</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="imagenes/styles.css">
+    </head>
+    <body>
+        <header id="inicio">
+            <h1>Mi tienda</h1>
+        </header>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#pedido">Hacer un pedido</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <main>
+            <section id="productos">
+                <h2>Productos</h2>
+                <a href="#camisa">Camisa</a>
+                <a href="#pantalon">Pantalón</a> 
+
+                <div class="productos">
+
+            <article id="camisa">
+                <h3>Camisa</h3> 
+                <img src="imagenes/camisa.webp" alt="Camisa de algodon">
+                <p>Camisa de algodon.</p>
+            </article>
+
+            <article id="pantalon">
+                <h3>Pantalón</h3>       
+                <img src="imagenes/pantalon.webp" alt="Pantalón de mezclilla">
+                <p>Pantalón de mezclilla.</p>
+            </article>
+
+                </div>
+
+            <table>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                </tr>
+
+                <tr>
+                    <td>Camisa</td>
+                    <td>$50.000</td>
+                    <td>10</td>
+                </tr> 
+                <tr>
+                    <td>Pantalón</td>
+                    <td>$80.000</td>
+                    <td>5</td>
+                </tr>
+            </table>
+
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML</li>
+                <lu>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+            </ul>
+
+            <h2>Pasos para comprar</h2>
+            <ol>
+                <li>Elegir un producto</li>
+                <li>Agregarlo al carrito</li>
+                <li>Realizar el pago</li>
+            </ol>
+            </section>
+
+            <section id="pedido">
+                <h2>Hacer un pedido</h2>
+                <form>
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre">
+                    <br>
+                    <label for="correo">Correo</label> 
+                    <input type="email" id="correo">
+                    <br>
+
+                    <label for="producto">Producto</label>
+
+                    <select id="producto">
+                        <option>Seleccione un producto</option>
+                        <option>Camisa</option>
+                        <option>Pantalón</option>
+                    </select>
+                    <br>
+
+                    <button>Enviar pedido</button>
+
+                </form>
+
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2> 
+                <p>Puedes contactarnos a traves de nuestro correo electronico: contacto@mitienda.com</p> 
+                <p>Tambien puedes llamarnos al numero: 3017738743</p> 
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 Mi tienda</p>
+        </footer>
+    </body>
+</html>
