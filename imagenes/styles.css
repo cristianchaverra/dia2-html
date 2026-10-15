@@ -1,5 +1,30 @@
-  h1 {
-    color: blue;
+ * {
+    box-sizing: border-box;
+  }
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  header {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #1e293b;
+    padding: 15px;
+    flex-wrap: wrap;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
   }
   h2 {
     color: red;
@@ -12,9 +37,7 @@
   }
   a {
     color: black;
-  }
-  a {
-    background-color: lightgray;
+    
   }
 
   img {
@@ -38,4 +61,28 @@
     .productos {
       grid-template-columns: repeat(3, 1fr);
     }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+  }
+  button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e293b;
+    color: #ffffff;
+    cursor: pointer; 
+    transition: transform 0.3s;
+  }
+  button:hover {
+    transform: translateY(-4px);
   }
